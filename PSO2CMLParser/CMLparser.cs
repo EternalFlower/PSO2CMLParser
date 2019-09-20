@@ -237,7 +237,7 @@ namespace PSO2CMLParser
 				{
 					try
 					{
-						CMLparser.FIGRdata[num * 3 + num2] = CMLparser.br.ReadInt32();
+						CMLparser.FIGRdata[i * 3 + num2] = CMLparser.br.ReadInt32();
 					}
 					catch (IndexOutOfRangeException)
 					{
