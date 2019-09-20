@@ -246,12 +246,19 @@ namespace PSO2CMLParser
 					num2++;
 				}
 			}
+            if (b < 13)
                 CMLparser.DupeSliderData(CMLparser.FIGRdata, 0, 13);
+            if (b < 14)
                 CMLparser.DupeSliderData(CMLparser.FIGRdata, 1, 14);
+            if (b < 15)
                 CMLparser.DupeSliderData(CMLparser.FIGRdata, 2, 15);
+            if (b < 16)
                 CMLparser.DupeSliderData(CMLparser.FIGRdata, 3, 16);
+            if (b < 17)
                 CMLparser.DupeSliderData(CMLparser.FIGRdata, 4, 17);
+            if (b < 18)
                 CMLparser.DupeSliderData(CMLparser.FIGRdata, 11, 18);
+            if (b < 19)
 			    CMLparser.DupeSliderData(CMLparser.FIGRdata, 12, 19);
 
 			if (CMLparser.showLog)
