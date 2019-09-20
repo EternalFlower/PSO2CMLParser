@@ -424,10 +424,13 @@ namespace PSO2CMLParser
 					Console.WriteLine("Unknown error occured: " + ex.Message);
 					return false;
 				}
-				catch (ArgumentException)
+				catch (ArgumentException ex)
 				{
-                    CMLparser.tb.AppendText(Environment.NewLine + "Tag " + tag + " not found");
-                    return false;
+                    Console.WriteLine("Invalid String");
+                    //CMLparser.tb.AppendText(Environment.NewLine + "Tag " + tag + " not found");
+                    //return false;
+                    num++;
+                    continue;
 				}
 				if (CMLparser.br.BaseStream.Position == CMLparser.br.BaseStream.Length)
 				{
